@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <title>Simple CaLcUlAtOr</title>
+    </head>
+<body style="background-color:grey">
+    <div style="background-color:paleturquoise;border-width:3px; border-style:ridge; width:400px;padding:20px">
+    <h1 style="text-align:center;font-size:300%"><u>Calculator App</u></h1>
+    
+    <form method="post" style="text-align: center" action="/calculate">
+        <label for="fno" style="padding:10px">First Input</label>
+        <input type="number" id="fno" name ="fno" placeholder="0000" style="padding:10px"><br><br>
+        <label for="sno">Second Input</label>
+        <input type="number" id="sno" name="sno" placeholder="0000" style="padding:10px"><br><br>
+        <label for="operation" style="font-size:200%">Choose an operation</label>
+        <select id="operation" name="operation" style="margin:10px 10px;width: 30px;height: 30px;">
+            <option value="add">+</option>
+            <option value="sub">-</option>
+            <option value="mul">*</option>
+            <option value="div">/</option>
+        </select><br>
+        <input type="submit" value="CALCULATE"><br>
+        
+        <label for="result">Result</label><br>
+        <input type="text" id="result" value="{{.Result}}" style ="padding: 15px;" readonly><br>
+
+        
+    </form>
+    
+    </div>
+</body>
+
+
+
+
+</html>
